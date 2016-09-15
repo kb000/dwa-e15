@@ -1,4 +1,6 @@
 /* 
+Original file: marketing.css
+
 Software License Agreement (BSD License)
 ========================================
 
@@ -82,6 +84,7 @@ a.pure-button-primary {
     font-size: 120%;
 }
 
+
 /*
  * -- SPLASH STYLES --
  * This is the blue top section that appears on the page.
@@ -156,20 +159,6 @@ a.pure-button-primary {
     overflow-x: hidden;
 }
 
-.img-peek {
-    height: 30vh;
-    min-height: 150px;
-    /* Transform is rather buggy, especially cross-browser.
-        transform: translateZ(-1px) scale(1.1); */
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position-x: 50%;
-    background-position-y: 40%;
-    background-size: 48em;
-    box-shadow: inset 0 0 1em #080808;
-    margin-top: -3vh;
-}
-
 .content {
     width: 100%;
     overflow-x: scroll;
@@ -218,10 +207,6 @@ a.pure-button-primary {
     /* We want to give the content area some more padding */
     .content {
         padding: 1em;
-    }
-    .img-peek {
-        background-position-y: 40%;
-        background-size: 78em;
     }
     /* We increase the height of the splash-container */
     /*    .splash-container {

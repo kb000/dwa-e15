@@ -1,0 +1,126 @@
+/* Color scheme: http://paletton.com/palette.php?uid=53F0l0k-0Gi8O%2BwmvNxxjlaqcaN */
+
+
+/* Note: Default styles are for mobile first.
+         Responsive styling for larger screens follows. */
+
+body {
+    line-height: 1.7em;
+    color: #BED8FE;
+    font-size: 13px;
+}
+
+h1,
+h2,
+h3 {
+    color: #0E1F39;
+}
+
+
+/*
+ * -- SPLASH STYLES --
+ * This is the blue top section that appears on the page.
+ * From: 
+ */
+
+.splash-container {
+    background: #105AC7;
+    z-index: 1;
+    overflow: hidden;
+    /* The following styles are required for the "scroll-over" effect */
+    width: 100%;
+    height: 56%;
+    top: 0;
+    left: 0;
+    position: fixed !important;
+    perspective: 50px;
+}
+
+.splash {
+    /* absolute center .splash within .splash-container */
+    width: 80%;
+    height: 45%;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.content-wrapper {
+    /* These styles are required for the "scroll-over" effect */
+    position: absolute;
+    top: 55%;
+    width: 100%;
+    min-height: 100%;
+    z-index: 2;
+    background: white;
+    overflow-x: hidden;
+}
+
+.img-peek {
+    height: 40vh;
+    min-height: 200px;
+    /* Transform is rather buggy, especially cross-browser.
+        transform: translateZ(-1px) scale(1.1); */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position-x: 50%;
+    background-position-y: 40%;
+    background-size: 63em;
+    box-shadow: inset 0 0 2em #080808;
+    margin-top: -3vh;
+}
+
+.content-head {
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin: 2em 0 1em;
+}
+
+.content {
+    width: 100%;
+    overflow-x: scroll;
+}
+
+
+/* Responsive css for medium screens */
+
+@media (min-width: 48em) {
+    body {
+        font-size: 16px;
+    }
+    .content {
+        padding: 1em;
+    }
+    .splash {
+        width: 50%;
+        height: 80%;
+    }
+    .splash-head {
+        font-size: 250%;
+    }
+    /* Adjust the position of the peek image */
+    .img-peek {
+        background-position-y: 40%;
+        background-size: 78em;
+    }
+}
+
+
+/* Responsive css for large screens */
+
+@media (min-width: 78em) {
+    .splash-head {
+        font-size: 300%;
+    }
+    /* Adjust the position of the peek image */
+    .img-peek {
+        background-position-y: 50%;
+        background-size: cover;
+    }
+}
