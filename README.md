@@ -1,5 +1,5 @@
 # Personal landing page and portfolio
-## Developing Web Applications: Harvard Fall 2016
+## Dynamic Web Applications: Harvard Fall 2016
 
 Kevin Burek <kev[...]@g[...].com>
 Submitted for DWA (CSCI-E15)[Project 1](http://dwa15.com/Projects.../P1) 2016-09-15.
