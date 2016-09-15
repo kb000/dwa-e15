@@ -1,4 +1,9 @@
-/* Color scheme: http://paletton.com/palette.php?uid=53F0l0k-0Gi8O%2BwmvNxxjlaqcaN */
+/*
+ * Stylesheet for DWA E-15 project 1
+ */
+
+
+/* Color scheme: http://paletton.com/palette.php?uid=53N0i0kN9LJ8HUmo6P0-qmdppbG */
 
 
 /* Note: Default styles are for mobile first.
@@ -6,14 +11,14 @@
 
 body {
     line-height: 1.7em;
-    color: #BED8FE;
+    color: #B4C4EE;
     font-size: 13px;
 }
 
 h1,
 h2,
 h3 {
-    color: #0E1F39;
+    color: #121E3F;
 }
 
 
@@ -25,7 +30,7 @@ h3 {
  */
 
 .splash-backdrop {
-    background: #105AC7;
+    background: #0A41D7;
     z-index: 1;
     overflow: hidden;
     /* The following styles are required for the "scroll-over" effect */
@@ -92,7 +97,32 @@ h3 {
 
 .content {
     width: 100%;
-    overflow-x: scroll;
+    overflow-x: auto;
+}
+
+.numeral-block {
+    margin: auto;
+    padding: 0;
+    width: 120px;
+    height: 100px;
+    color: #B4C4EE;
+    background: #0A41D7;
+    font-size: 80px;
+    line-height: 100px;
+    font-family: 'Roboto Slab', sans-serif;
+    text-align: center;
+}
+
+.numeral-II::before {
+    content: "II";
+}
+
+.numeral-III::before {
+    content: "III";
+}
+
+.numeral-IV::before {
+    content: "IV";
 }
 
 
