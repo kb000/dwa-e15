@@ -20,20 +20,26 @@ h3 {
 /*
  * -- SPLASH STYLES --
  * This is the blue top section that appears on the page.
- * From: 
+ * From: http://purecss.io/combo/1.18.13?/css/layouts/marketing.css
+ * See BSD 3-Clause license in /css/purecss.license.txt
  */
 
-.splash-container {
+.splash-backdrop {
     background: #105AC7;
     z-index: 1;
     overflow: hidden;
     /* The following styles are required for the "scroll-over" effect */
     width: 100%;
-    height: 56%;
+    height: 100%;
     top: 0;
     left: 0;
     position: fixed !important;
-    perspective: 50px;
+}
+
+.splash-container {
+    width: 100%;
+    height: 50%;
+    position: fixed !important;
 }
 
 .splash {
@@ -48,12 +54,13 @@ h3 {
     right: 0;
     text-align: center;
     text-transform: uppercase;
+    font-size: 150%;
 }
 
 .content-wrapper {
     /* These styles are required for the "scroll-over" effect */
     position: absolute;
-    top: 55%;
+    top: 20em;
     width: 100%;
     min-height: 100%;
     z-index: 2;
@@ -76,6 +83,7 @@ h3 {
 }
 
 .content-head {
+    text-align: center;
     font-weight: 400;
     text-transform: uppercase;
     letter-spacing: 0.1em;
@@ -91,23 +99,19 @@ h3 {
 /* Responsive css for medium screens */
 
 @media (min-width: 48em) {
-    body {
-        font-size: 16px;
-    }
     .content {
         padding: 1em;
+        font-size: 16px;
     }
     .splash {
         width: 50%;
-        height: 80%;
-    }
-    .splash-head {
-        font-size: 250%;
+        height: 60%;
+        font-size: 200%;
     }
     /* Adjust the position of the peek image */
     .img-peek {
         background-position-y: 40%;
-        background-size: 78em;
+        background-size: 90em;
     }
 }
 
@@ -115,12 +119,12 @@ h3 {
 /* Responsive css for large screens */
 
 @media (min-width: 78em) {
-    .splash-head {
-        font-size: 300%;
+    .splash {
+        font-size: 250%;
     }
     /* Adjust the position of the peek image */
     .img-peek {
-        background-position-y: 50%;
+        background-position-y: 40%;
         background-size: cover;
     }
 }
